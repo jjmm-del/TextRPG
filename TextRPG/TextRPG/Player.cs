@@ -27,6 +27,25 @@ namespace TextRPG
             BaseHealth = 100;
             BaseGold = 1500;
             Inventory = new Inventory();
+            switch (job)
+            {
+                case JobType.전사:
+                    BaseAttack = 12;
+                    BaseDefense = 8;
+                    BaseHealth = 150;
+                    break;
+                case JobType.도적:
+                    BaseAttack = 16;
+                    BaseDefense = 5;
+                    BaseHealth = 120;
+                    break;
+                case JobType.마법사:
+                    BaseAttack = 18;
+                    BaseDefense = 3;
+                    BaseHealth = 100;
+                    break;
+
+            }
         }
         public int TotalAttack
         {
