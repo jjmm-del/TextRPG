@@ -46,7 +46,7 @@ namespace TextRPG
                 {
                     var shopitem = shopItems[i];
                     string isBought = shopitem.IsBought ? "[구매완료]" : "";
-                    Console.WriteLine($"{isBought}{shopitem.Item.Name} | {shopitem.Item.GetStatIncrease()} | {shopitem.Item.Decription}|{shopitem.Price}G");
+                    Console.WriteLine($"-{isBought}{shopitem.Item.Name} | {shopitem.Item.GetStatIncrease()} | {shopitem.Item.Decription}|{shopitem.Price}G");
                 }
                 Console.WriteLine("1.아이템구매");
                 Console.WriteLine("0.나가기");
